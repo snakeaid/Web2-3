@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy List</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+<div id="container" class="container">
+    <div class="add-products-container">
+        <div class="add-products">
+            <input id="product-name" type="text" class="product-name" placeholder="Назва товару" />
+            <button id="add-product-button"  class="add-product-button" data-tooltip="Додати продукт">Додати</button>
+        </div>
+        <ul class="product-list">
+            <li class="product-item">
+                <p class="product-label crossed-out">Помідори</p>
+                <div class="product-amount">
+                    <p class="amount-text">2</p>
+                </div>
+                <div class="product-control">
+                    <button class="product-state" data-tooltip="Статус">Куплено</button>
+                </div>
+            </li>
+            <li class="product-item">
+                <p class="product-label">Печиво</p>
+                <div class="product-amount">
+                    <button  class="minus-button round-button" data-tooltip="Зменшити кількість">-</button>
+                    <p class="amount-text">2</p>
+                    <button class="plus-button round-button" data-tooltip="Збільшити кількість">+</button>
+                </div>
+                <div class="product-control">
+                    <button class="product-state" data-tooltip="Статус">Не куплено</button>
+                    <button id="delete-product" class="product-delete" data-tooltip="Видалити продукт">×</button>
+                </div>
+            </li>
+            <li class="product-item">
+                <p class="product-label">Сир</p>
+                <div class="product-amount">
+                    <button class="minus-button round-button semi-transparent" data-tooltip="Зменшити кількість">-</button>
+                    <p class="amount-text">1</p>
+                    <button class="plus-button round-button" data-tooltip="Збільшити кількість">+</button>
+                </div>
+                <div class="product-control">
+                    <button class="product-state" data-tooltip="Статус">Не куплено</button>
+                    <button class="product-delete" data-tooltip="Видалити продукт">×</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="summary-container">
+        <ul>
+            <li class="summary-list-item">
+                <h2>Залишилося</h2>
+            </li>
+            <li class="summary-list-item">
+                <div class="left-summary">
+                    <div class="product-summary">
+                        <p class="summary-text">Печиво</p>
+                        <p class="summary-amount">2</p>
+                    </div>
+                    <div class="product-summary">
+                        <p class="summary-text">Сир</p>
+                        <p class="summary-amount">1</p>
+                    </div>
+                </div>
+            </li>
+            <li class="summary-list-item">
+                <h2>Куплено</h2>
+            </li>
+            <li class="summary-list-item">
+                <div class="bought-summary">
+                    <div class="product-summary crossed-out">
+                        <p class="summary-text">Помідори</p>
+                        <p class="summary-amount">2</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="author-badge">
+        <p class="badge-title">Buy list</p>
+        <p class="name-full">Created by: <br><span class="author-name">Antypenko Illia</span></p>
+    </div>
+</div>
+</body>
+</html>
